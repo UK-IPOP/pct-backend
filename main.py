@@ -26,7 +26,7 @@ async def home(track: str, level: str):
         "https://raw.githubusercontent.com/uk-ipop/pct-decision-tool/main/data/records.json"
     ).json()
 
-    # get sha val from last commit
+    # get sha value from last commit
     sha_val = (
         requests.get(
             "https://api.github.com/repos/uk-ipop/pct-decision-tool/contents/data/records.json"
